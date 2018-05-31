@@ -1,0 +1,29 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+.cryptocurrency-ticker {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #fcc118;
+  color: black;
+  min-height: 50px;
+  padding: 10px 0; }
+  .cryptocurrency-ticker__data {
+    display: block;
+    float: left;
+    width: 100%; }
+    .cryptocurrency-ticker__data .price-up {
+      color: #1d8b3a; }
+    .cryptocurrency-ticker__data .price-down {
+      color: #A11B0A; }
+    .cryptocurrency-ticker__data .daypct-up {
+      color: #1d8b3a; }
+    .cryptocurrency-ticker__data .daypct-down {
+      color: #A11B0A; }
+  .cryptocurrency-ticker__item {
+    display: none; }
+
+.widget ul li.webticker-init, .widget ul li.cryptocurrency-ticker__item {
+  border: none; }
+
+/*# sourceMappingURL=cryptocurrency-exchange-public.css.map */

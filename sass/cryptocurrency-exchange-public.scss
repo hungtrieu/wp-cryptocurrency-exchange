@@ -1,0 +1,53 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ $color_up: #1d8b3a;
+ $color_down: #A11B0A;
+ $bg_color: #fcc118;
+
+ .cryptocurrency-ticker {
+     font-family: Helvetica, Arial, sans-serif;
+     background-color: $bg_color;
+     color: black;
+     min-height: 50px;
+     padding: 10px 0;
+
+     &__data {
+        display:block;
+        float:left;
+        width:100%;
+
+        .price {
+            &-up {
+                color: $color_up;
+            }
+
+            &-down {
+                color: $color_down;
+            }
+        }
+
+        .daypct {
+            &-up {
+                color: $color_up;
+            }
+
+            &-down {
+                color: $color_down;
+            }
+        }
+     } 
+
+     &__item {
+         display: none;
+     }
+ }
+
+.widget ul li {
+    &.webticker-init,
+    &.cryptocurrency-ticker__item {
+        border: none;
+    }
+ }
